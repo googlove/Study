@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">AsyncTask Downloader</string>
+    <string name="todo4">TODO</string>
+    <string name="todo44">TODO</string>
+    <string name="file54">File:</string>
+    <string name="_0005">000</string>
+    <string name="todo78">TODO</string>
+    <string name="todo76">TODO</string>
+    <string name="todo6465">TODO</string>
+    <string name="number4">----------</string>
+    <string name="ok2">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="file_name99">File Name</string>
+
+    <string-array name="name">
+        <item>Astroneer</item>
+        <item>DOOM</item>
+        <item>F1_2016</item>
+        <item>Grand_Theft_Auto_5</item>
+        <item>GRID_Autosport_Black_Edition</item>
+        <item>Happy_Room</item>
+        <item>MTB_Downhill_Simulator</item>
+        <item>No_Mans_Sky</item>
+        <item>Ravenfield</item>
+        <item>The_Witcher_3_Wild_Hunt</item>
+        <item>X-Plane_11</item>
+        <item>Yonder_The_Cloud_Catcher_Chronicles</item>
+    </string-array>
+</resources>

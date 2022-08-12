@@ -1,0 +1,10 @@
+INSERT INTO PATIENTS (firstName,lastName,dateOfBirth) VALUES ('Bill'        , 'Ellie',   TO_DATE('15/06/2015', 'DD/MM/YYYY'));
+INSERT INTO PATIENTS (firstName,lastName,dateOfBirth) VALUES ('Rob'         , 'Stevens', TO_DATE('22/09/2016', 'DD/MM/YYYY'));
+INSERT INTO PATIENTS (firstName,lastName,dateOfBirth) VALUES ('Ryan'        , 'Marie',   TO_DATE('17/10/2013', 'DD/MM/YYYY'));
+INSERT INTO PATIENTS (firstName,lastName,dateOfBirth) VALUES ('Joe'         , 'Johnson', TO_DATE('24/11/2021', 'DD/MM/YYYY'));
+INSERT INTO PATIENTS (firstName,lastName,dateOfBirth) VALUES ('Phil'        , 'Smith',   TO_DATE('17/04/2012', 'DD/MM/YYYY'));
+INSERT INTO PATIENTS (firstName,lastName,dateOfBirth) VALUES ('Anna'        , 'Crisp',   TO_DATE('13/12/2014', 'DD/MM/YYYY'));
+INSERT INTO PATIENTS (firstName,lastName,dateOfBirth) VALUES ('Sara'        , 'Savage',  TO_DATE('17/11/2019', 'DD/MM/YYYY'));
+INSERT INTO PATIENTS (firstName,lastName,dateOfBirth) VALUES ('Christine'   , 'Fisher',  TO_DATE('17/12/2019', 'DD/MM/YYYY'));
+INSERT INTO PATIENTS (firstName,lastName,dateOfBirth) VALUES ('Phebe'       , 'Munch',   TO_DATE('23/08/2019', 'DD/MM/YYYY'));
+INSERT INTO PATIENTS (firstName,lastName,dateOfBirth) VALUES ('Jess'        , 'Hunt',    TO_DATE('05/05/2020', 'DD/MM/YYYY'));

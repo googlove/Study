@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Progress Report</string>
+
+    <string-array name="name">
+        <item>Ярослав</item>
+        <item>Іван</item>
+        <item>Анастасія</item>
+        <item>Андрій</item>
+        <item>Владислав</item>
+    </string-array>
+
+    <string-array name="surname">
+        <item>Гогулов</item>
+        <item>Колісник</item>
+        <item>Поляк</item>
+        <item>Головченко</item>
+        <item>Завгородній</item>
+    </string-array>
+
+    <string-array name="middle_name">
+        <item>Володимирович</item>
+        <item>Валерійович</item>
+        <item>Віталіївна</item>
+        <item>Андрійович</item>
+        <item>Ігорович</item>
+    </string-array>
+</resources>

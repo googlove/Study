@@ -1,0 +1,18 @@
+﻿  MyPaintPro.cpp
+C:\Users\User\source\MyPaintPro\MyPaintPro\MyPaintPro.cpp(306,27): warning C4244: *=: преобразование "double" в "LONG", возможна потеря данных
+C:\Users\User\source\MyPaintPro\MyPaintPro\MyPaintPro.cpp(307,28): warning C4244: *=: преобразование "double" в "LONG", возможна потеря данных
+C:\Users\User\source\MyPaintPro\MyPaintPro\MyPaintPro.cpp(383,16): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\User\source\MyPaintPro\MyPaintPro\MyPaintPro.cpp(384,16): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\User\source\MyPaintPro\MyPaintPro\MyPaintPro.cpp(427,14): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\User\source\MyPaintPro\MyPaintPro\MyPaintPro.cpp(428,14): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\User\source\MyPaintPro\MyPaintPro\MyPaintPro.cpp(435,31): warning C4244: *=: преобразование "double" в "LONG", возможна потеря данных
+C:\Users\User\source\MyPaintPro\MyPaintPro\MyPaintPro.cpp(436,32): warning C4244: *=: преобразование "double" в "LONG", возможна потеря данных
+C:\Users\User\source\MyPaintPro\MyPaintPro\MyPaintPro.cpp(469,14): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\User\source\MyPaintPro\MyPaintPro\MyPaintPro.cpp(470,14): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\User\source\MyPaintPro\MyPaintPro\MyPaintPro.cpp(490,10): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\User\source\MyPaintPro\MyPaintPro\MyPaintPro.cpp(491,10): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\User\source\MyPaintPro\MyPaintPro\MyPaintPro.cpp(515,26): warning C4244: *=: преобразование "double" в "LONG", возможна потеря данных
+C:\Users\User\source\MyPaintPro\MyPaintPro\MyPaintPro.cpp(516,27): warning C4244: *=: преобразование "double" в "LONG", возможна потеря данных
+C:\Users\User\source\MyPaintPro\MyPaintPro\MyPaintPro.cpp(572,35): warning C4244: *=: преобразование "double" в "LONG", возможна потеря данных
+C:\Users\User\source\MyPaintPro\MyPaintPro\MyPaintPro.cpp(573,36): warning C4244: *=: преобразование "double" в "LONG", возможна потеря данных
+  MyPaintPro.vcxproj -> C:\Users\User\source\MyPaintPro\Debug\MyPaintPro.exe

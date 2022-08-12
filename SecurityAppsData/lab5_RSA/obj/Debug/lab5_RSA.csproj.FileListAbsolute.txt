@@ -1,0 +1,2 @@
+C:\JavaProjects\RSA\lab5_RSA\obj\Debug\lab5_RSA.exe
+C:\JavaProjects\RSA\lab5_RSA\obj\Debug\lab5_RSA.pdb

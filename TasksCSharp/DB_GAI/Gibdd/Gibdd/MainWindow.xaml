@@ -1,0 +1,89 @@
+﻿<Window x:Class="Gibdd.Model.InsertAuto"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gibdd.Model"
+        mc:Ignorable="d"
+        Title="ГИБДД" Height="457.067" Width="860.8" ContentRendered="Window_ContentRendered">
+
+    <Grid >
+        <TabControl Name="tabControl" Height="410" Margin="10,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="258">
+            <TabItem Name="searchOwner" Header="Поиск владельца">
+                <StackPanel Margin="0,0,5,6.8">
+
+                    <GroupBox Header="Поиск" Height="164" Margin="5">
+                        <StackPanel Margin="2">
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="0,5,0,0">
+                                <Label Content="Слово" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="70"/>
+                                <TextBox x:Name="wordTextBox" HorizontalAlignment="Left"  TextWrapping="Wrap"  VerticalAlignment="Top" Height="26" Width="149" TextChanged="WordTextBox_TextChanged" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Label Content="Искать по:"/>
+                                <ComboBox x:Name="methodSearchComboBox" Margin="5" Width="147">
+                                    <!--
+                                    <ComboBoxItem Content="ФИО владельца" ></ComboBoxItem>
+                                    <ComboBoxItem Content="Номеру телефона"></ComboBoxItem>
+                                    <ComboBoxItem Content="Местонахождению"></ComboBoxItem>
+                                    <ComboBoxItem Content="Району"></ComboBoxItem>
+                                    <ComboBoxItem Content="Организации"></ComboBoxItem>
+                                    <ComboBoxItem Content="ИНН"></ComboBoxItem>
+                                    
+                                    -->
+                                </ComboBox>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+                                <RadioButton x:Name="IndOwnerRadioButton" IsChecked="False" HorizontalAlignment="Center" Content="Физическое лицо" Margin="2,0,0,0" Checked="RadioButton_Checked" />
+                                <RadioButton x:Name="entityRadioButton" HorizontalAlignment="Center" Content="Юридическое лицо" Margin="10,0,0,0" Checked="RadioButton_Checked"/>
+                            </StackPanel>
+                            <Button  Margin="10" Height="40" x:Name="searchButton"  IsEnabled="False"  Content="Найти" Click="SearchButton_Click"/>
+
+                        </StackPanel>
+
+                    </GroupBox>
+
+                    <GroupBox Header="Редактирование списка владельцев" HorizontalAlignment="Left" Height="195" Width="247" >
+                        <StackPanel Orientation="Vertical" Margin="0,2,2.2,-12.2" Height="183" VerticalAlignment="Top">
+                            <Button x:Name="openCardOfOwnerButton"  Content="Открыть карточку владельца" HorizontalAlignment="Center"  VerticalAlignment="Top"  Height="40" Margin="10,10,10.6,10" Width="213" Click="OpenCardOfOwnerButton_Click"/>
+                            <Button x:Name="deleteCardOfOwnerButton" Content="Удалить запись о владельце" HorizontalAlignment="Center" VerticalAlignment="Top"  Height="40" Margin="10,10,9.8,10" Width="213"/>
+                            <Button x:Name="addCardOfOwner" Content="Добавить владельца" HorizontalAlignment="Center" VerticalAlignment="Top" Height="40"  Width="213" Margin="10,10,9.8,10" Click="AddCardOfOwner_Click"/>
+                        </StackPanel>
+
+                    </GroupBox>
+
+                </StackPanel>
+            </TabItem>
+            <TabItem Name="searchAuto" Header="Поиск автомобиля">
+                <StackPanel Margin="0,0,4.8,-13">
+                    <GroupBox Header="Поиск">
+                        <StackPanel Margin="2">
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="0,5,0,0">
+                                <Label Content="Слово" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="70"/>
+                                <TextBox x:Name="wordAutoTextBox" TextChanged="WordAutoTextBox_TextChanged" HorizontalAlignment="Left"  TextWrapping="Wrap"  VerticalAlignment="Top" Height="26" Width="190" />
+                            </StackPanel>
+                            <Label HorizontalAlignment="Center" FontSize="10" Content="Номер в формете: Х ХХХ ХХ ХХХ" Margin="71,0,0.4,0" RenderTransformOrigin="0.806,0.688" Width="159"/>
+                            <StackPanel Orientation="Horizontal">
+                                <Label Content="Искать по:"/>
+                                <ComboBox Name="methodSearchAutoComboBox" Margin="5" Width="154">
+                                    <ComboBoxItem Content="Номер" ></ComboBoxItem>
+                                    <ComboBoxItem Content="Бренд" ></ComboBoxItem>
+                                    <ComboBoxItem Content="Модель" ></ComboBoxItem>
+                                    <ComboBoxItem Content="Номер двигателя" ></ComboBoxItem>
+                                    <ComboBoxItem Content="Номер кузова" ></ComboBoxItem>
+
+                                </ComboBox>
+                            </StackPanel>
+
+                            <Button  Margin="10" Height="40" Name="searchAutoButton"  IsEnabled="False"  Content="Найти" Click="SearchAutoButton_Click"/>
+
+                        </StackPanel>
+
+                    </GroupBox>
+
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+        <DataGrid Name="dataGridView" Margin="273,10,0,0"
+                  IsReadOnly="True" MouseDoubleClick="DataGridView_MouseDoubleClick" SelectionChanged="DataGridView_SelectionChanged" CurrentCellChanged="DataGridView_CurrentCellChanged" HorizontalAlignment="Left" Width="571" Height="410" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

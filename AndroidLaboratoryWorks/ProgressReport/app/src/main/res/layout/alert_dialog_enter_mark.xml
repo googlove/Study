@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/alert_dialog"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/buttonOkEnterMark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/alert_button_ok"
+        android:text="OK" />
+
+    <EditText
+        android:id="@+id/editTextMark"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:ems="3"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/buttonCancelEnterMark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/alert_button_cancel"
+        android:text="Cancel" />
+
+</LinearLayout>

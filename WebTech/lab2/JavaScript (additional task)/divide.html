@@ -1,0 +1,29 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+<body>
+    Введите текст: <br>
+    <input type="text"><br>
+    Первая часть: <br>
+    <input type="text"> <br>
+    Вторая часть: <br>
+    <input type="text"> <br><br>
+    <button>Press key</button>
+    <script>
+        let input = document.querySelectorAll("input[type='text'");
+        let btn = document.querySelector("button");
+      
+        btn.addEventListener("click", () => {
+            let str = input[0].value;
+            input[1].value = str.slice(0, str.length/2);
+            input[2].value = str.slice(str.length/2, str.length);
+            input[1].setAttribute("readonly","readonly");
+            input[2].setAttribute("readonly","readonly");
+           });
+    </script>
+</body>
+</html>

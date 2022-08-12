@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1605517333 source:c:\users\user\source\lab2\main.cpp
+	<tchar.h>
+	"resource.h"
+	<windows.h>
+
+1256295460 c:\users\user\source\lab2\resource.h
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Activities">
+        <menu>
+            <item
+                android:id="@+id/web"
+                android:icon="@drawable/ic_web_black_24dp"
+                android:title="Web"/>
+            <item
+                android:id="@+id/bookmark"
+                android:icon="@drawable/ic_bookmark_black_24dp"
+                android:title="Bookmark" />
+            <item
+                android:id="@+id/history"
+                android:icon="@drawable/ic_history_black_24dp"
+                android:title="History" />
+        </menu>
+
+    </item>
+
+    <item android:title="Actions">
+        <menu>
+            <item
+                android:id="@+id/add_book"
+                android:icon="@drawable/ic_add_circle_outline_black_24dp"
+                android:title="Add Bookmark"/>
+            <item
+                android:id="@+id/homepage"
+                android:icon="@drawable/ic_first_page_black_24dp"
+                android:title="Homepage Options"/>
+            <item
+                android:id="@+id/incognito"
+                android:icon="@drawable/ic_incognito_24dp"
+                android:title="Incognito"/>
+            <item
+                android:id="@+id/search_engine"
+                android:icon="@drawable/ic_insert_link_black_24dp"
+                android:title="Change Search Engine"/>
+
+        </menu>
+    </item>
+</menu>

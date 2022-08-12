@@ -1,0 +1,66 @@
+﻿<Window x:Class="DataBase.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DataBase"
+        mc:Ignorable="d"
+        Title="DataBase" Height="507.029" Width="696.262" Loaded="Window_Loaded" Closing="Window_Closing">
+    <Grid Margin="0,0,2,11">
+        <TabControl HorizontalAlignment="Left" Width="658" Height="465" VerticalAlignment="Bottom" Margin="10,0,0,-10" BorderThickness="1" SelectionChanged="TabControl_SelectionChanged">
+            <TabItem Header="Данные" MinWidth="50">
+                <Grid Background="#FFE5E5E5">
+                    <ListBox x:Name="ListBox1" Margin="0,29,0,0"/>
+                    <Label Content="Номер" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="60"/>
+                    <Label Content="Марка" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="60" Margin="93,0,0,0" RenderTransformOrigin="0.5,0.5"/>
+                    <Label Content="Год" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="60" Margin="148,0,0,0"/>
+                    <Label Content="Цвет" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="60" Margin="208,0,0,0"/>
+                    <Label Content="ФИО владельца" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="100" Margin="278,0,0,0"/>
+                    <Label Content="Адрес владельца" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="109" Margin="392,0,0,0"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Обновление" MinWidth="50">
+                <Grid Background="#FFE5E5E5" Margin="0,0,-2,0">
+                    <Label x:Name="Label1" Content="Марка" Margin="14,113,505,221"/>
+                    <TextBox x:Name="Change_mark" TextWrapping="Wrap" Margin="14,156,570,239" IsEnabled="False"/>
+                    <Button x:Name="Button2" Margin="263,229,287,160" Content="Изменить" IsEnabled="False" Click="Change"/>
+                    <Label x:Name="Label1_Copy" Content="Год выпуска" Margin="123,117,396,211"/>
+                    <TextBox x:Name="Change_year" TextWrapping="Wrap" Margin="123,160,456,235" IsEnabled="False"/>
+                    <Label x:Name="Label1_Copy1" Content="Цвет" Margin="232,113,287,215"/>
+                    <TextBox x:Name="Change_color" TextWrapping="Wrap" Margin="232,156,334,235" IsEnabled="False"/>
+                    <Label x:Name="Label1_Copy2" Content="Номер" Margin="17,9,469,325"/>
+                    <TextBox x:Name="Change_number" TextWrapping="Wrap" Margin="17,42,469,359" TextChanged="Change_number_TextChanged"/>
+                    <Label x:Name="Label1_Copy3" Content="ФИО владельца" Margin="367,117,190,211"/>
+                    <TextBox x:Name="Change_FIO" TextWrapping="Wrap" Margin="346,156,162,235" IsEnabled="False"/>
+                    <Button Margin="277,42,273,357" Content="Поиск" Click="Search"/>
+                    <Label x:Name="Label1_Copy9" Content="Адрес" Margin="524,117,34,211"/>
+                    <TextBox x:Name="Change_address" TextWrapping="Wrap" Margin="502,156,6,235" IsEnabled="False"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="TabItem3" Header="Добавление" MinWidth="43">
+                <Grid Background="#FFE5E5E5" Margin="0,-1,-1,-1">
+                    <TextBox x:Name="Add_number" TextWrapping="Wrap" Margin="18,75,561,322"/>
+                    <Button x:Name="Button1" Margin="267,148,282,249" Content="Добавить" Click="Add"/>
+                    <TextBox x:Name="Add_mark" TextWrapping="Wrap" Margin="106,75,478,322"/>
+                    <TextBox x:Name="Add_year" TextWrapping="Wrap" Margin="202,75,381,322"/>
+                    <TextBox x:Name="Add_color" TextWrapping="Wrap" Margin="296,75,282,322"/>
+                    <Label x:Name="Label1_Copy10" Content="Год выпуска" Margin="196,40,367,373"/>
+                    <Label x:Name="Label1_Copy11" Content="Цвет" Margin="311,40,294,369"/>
+                    <Label x:Name="Label1_Copy12" Content="Номер" Margin="18,40,565,367"/>
+                    <Label x:Name="Label1_Copy13" Content="ФИО владельца" Margin="400,44,153,369"/>
+                    <Label x:Name="Label1_Copy14" Content="Адрес" Margin="571,44,25,367"/>
+                    <Label x:Name="Label1_Copy4" Content="Марка" Margin="106,40,448,367"/>
+                    <TextBox x:Name="Add_FIO" TextWrapping="Wrap" Margin="387,75,143,322"/>
+                    <TextBox x:Name="Add_address" TextWrapping="Wrap" Margin="526,75,10,320"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Удаление">
+                <Grid Background="#FFE5E5E5">
+                    <Label x:Name="Label1_Copy8" Content="Номер" Margin="260,98,314,312"/>
+                    <TextBox x:Name="Delete_number" TextWrapping="Wrap" Margin="251,130,296,277"/>
+                    <Button Margin="260,196,314,208" Content="Удалить" Click="Delete"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

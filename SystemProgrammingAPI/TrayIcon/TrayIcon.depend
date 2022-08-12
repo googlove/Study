@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1607031688 source:c:\users\user\source\trayicon\main.cpp
+	<windows.h>
+	<shellapi.h>
+

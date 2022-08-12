@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TaskLab3</string>
+    <string name="todo">TODO</string>
+    <string name="xml"> >> Запустити </string>
+    <string name="uran">Завантажити програмно</string>
+    <string name="hello_android_q_10">Hello, Android Q (10)</string>
+    <string name="ss">|| Зупинити</string>
+    <string name="ssd">|> Пауза</string>
+</resources>

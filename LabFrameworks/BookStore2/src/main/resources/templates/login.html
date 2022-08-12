@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<!-- Bootstrap CSS -->
+
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+	crossorigin="anonymous">
+<link th:href="@{/styles/cssandjs/main.css}" rel="stylesheet" />
+<title>Login Page</title>
+<style>
+.textfields{
+	width:30rem;
+}
+.row{
+margin:3px;
+}
+span{
+	font-weight:bold;
+	font-size:2rem;
+}
+input[type="submit"]{
+color:blue;
+width:30rem;
+height:6rem;
+border:2px solid blue;
+border-radius:20%;
+background-color:#ff0;
+}</style>
+</head>
+<body>
+	<div class="container">
+		<div th:if="${param.error}">Invalid username and password.</div>
+		<div th:if="${param.logout}">You have been logged out.</div>
+		<form th:action="@{/login}" method="post">
+			<div class="form-group row">
+			<span>Please enter your user credentials:</span></div>
+			<div class="form-group row">
+				<label> User Name : <input class="form-control textfields" type="text"
+					name="username" />
+				</label>
+			</div>
+			
+			<div class="form-group row">
+				<label> Password: <input class="form-control textfields"
+					type="password" name="password" />
+				</label>
+			</div>
+			
+			<div class="form-group row">
+				<input type="submit" value="Sign In" />
+			</div>
+		</form>
+	</div>
+</body>
+</html>

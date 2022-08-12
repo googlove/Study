@@ -1,0 +1,65 @@
+﻿<Window x:Class="Gibdd.AddOwner"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gibdd"
+        mc:Ignorable="d"
+        Title="Добавление владельца" Height="321.89" Width="399.521">
+    <Grid>
+        <GroupBox Header="Информация о владельце" Height="271" Margin="10,11,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="373">
+            <Grid Margin="0,0,-3,-6">
+                <Label Content="ФИО" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Width="61" Height="25"/>
+                <TextBox HorizontalAlignment="Left"
+                    x:Name="fioOwnerTextBox"
+                    Height="25"
+                    Margin="71,11,0,0"
+                    TextWrapping="Wrap"
+                    VerticalAlignment="Top"
+                    Width="284"/>
+                <Label Content="Номер" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="61" Height="25"/>
+                <TextBox x:Name="phoneNumberTextBox" 
+                    HorizontalAlignment="Left" 
+                    Height="25" Margin="71,41,0,0" 
+                    TextWrapping="Wrap" 
+                       
+                    VerticalAlignment="Top" 
+                    Width="284"/>
+                <Label Content="Адресс" HorizontalAlignment="Left" Margin="10,71,0,0" VerticalAlignment="Top" Width="61" Height="25"/>
+                <TextBox x:Name="addressTextBox" 
+                    HorizontalAlignment="Left" 
+                    Height="25" Margin="71,71,0,0"
+                    TextWrapping="Wrap" 
+                    VerticalAlignment="Top" 
+                    Width="284"/>
+                <Label Content="Название организации" HorizontalAlignment="Left" Margin="10,132,0,0" VerticalAlignment="Top" Width="148" Height="25"/>
+                <TextBox x:Name="nameCompanyTextBox"
+                    IsEnabled="False"
+                    HorizontalAlignment="Left" 
+                    Height="29" Margin="163,133,0,0"
+                    TextWrapping="Wrap"
+                    VerticalAlignment="Top"
+                    Width="192"/>
+                <Label Content="ИНН" HorizontalAlignment="Left" Margin="10,167,0,0" VerticalAlignment="Top" Width="61" Height="25"/>
+                <TextBox x:Name="innTextBox" 
+                    IsEnabled="False"
+                    HorizontalAlignment="Left" 
+                    Height="25" Margin="71,167,0,0"
+                    TextWrapping="Wrap"
+                    VerticalAlignment="Top"
+                    Width="284"/>
+                <Label Content="Район" HorizontalAlignment="Left" Margin="10,101,0,0" VerticalAlignment="Top" Width="61" Height="25"/>
+                <TextBox x:Name="districtTextBox" 
+                    HorizontalAlignment="Left" 
+                    Height="27" Margin="71,101,0,0"
+                    TextWrapping="Wrap" 
+                    VerticalAlignment="Top" 
+                    Width="284"/>
+                <Button Name="addOwnerButton" Content="Сохранить" Click="AddOwnerButton_Click" Margin="245,209,16.8,16.2"/>
+                <RadioButton Name="indOwnerRadioButton" IsChecked="True" Content="Физическое лицо" HorizontalAlignment="Left" Margin="10,204,0,0" VerticalAlignment="Top"/>
+                <RadioButton Name="entityOwnerRadioButton" Content="Юридческое лицо" HorizontalAlignment="Left" Margin="10,219,0,0" VerticalAlignment="Top"/>
+            </Grid>
+        </GroupBox>
+
+    </Grid>
+</Window>

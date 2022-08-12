@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1576659937 source:d:\ty\uni\discret\4\main.cpp
+	<iostream>
+	<windows.h>
+	<stdlib.h>
+	<iomanip>
+
+1576659938 source:h:\вдрс\йдл\4\main.cpp
+	<iostream>
+	<windows.h>
+	<stdlib.h>
+	<iomanip>
+

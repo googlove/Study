@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto|Neucha');
+h3 {
+    font-family: Roboto;
+    color: #5ea154;
+}
+.container {
+    border-top: 50px solid #6A8F7C;
+    border-bottom: 50px solid #6A8F7C;
+    width: 85%;
+    margin: 0 auto;
+    background-color:#b6daade6;
+    background: url(wormz.png);
+}
+@media screen and (max-width: 1240px)  {
+    .container {
+        width: 100%;
+    }
+}
+
+#resume {
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    text-align: center;
+    color: #7b88a4;
+    font-family: Roboto;
+    font-size: 26px;
+}
+#resume:after {
+    display: inline-block;
+    margin: 0 0 8px 20px;
+    height: 8px;
+    content: " ";
+    text-shadow: none;
+    background-color: #7b88a4;
+    width: 42%;
+}
+#resume:before {
+    display: inline-block;
+    margin: 0 20px 8px 0;
+    height: 8px;
+    content: " ";
+    text-shadow: none;
+    background-color: #7b88a4;
+    width: 42%;
+}
+.header_info {
+    font-family: Neucha;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.header_info img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.header_info h1{
+    color: #423939;
+}
+.header_info h2{
+    color: #757bbc;
+}
+.content {
+    display: flex;
+    background: white;
+    flex-direction: row;
+    justify-content: center;
+    border-top: 2px solid #b3bac2;
+    border-bottom: 2px dashed #b3bac2;
+}
+
+.profile {
+    flex-basis: auto;
+    width: 25%;
+    background: url(wormz.png);
+}
+
+.experience {
+    border-bottom: 2px dashed #b3bac2;
+}
+.education {
+    border-bottom: 2px dashed #b3bac2;
+}
+.skills {
+}
+.profile_info {
+    font-family: Roboto;
+    font-weight: bold;
+}
+.profile p{
+    font-family: Roboto;
+}
+.experience h3 {
+    background: #b3e1cc;
+    border-radius: 5px;
+}
+.experience_data {
+    display: flex;
+    font-family: Roboto;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.experience_company {
+    font-weight: bold;
+}
+.experience_addition {
+    text-align: center;
+    width: 30%;
+}
+.experience_addition-position {
+    font-weight: bold;
+    font-family: initial;
+    margin: 0;
+    padding: 5px 0px 15px 0px;
+}
+.experience_addition-languages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-content: center;
+}
+.experience_addition-languages > span{
+    background: #629b51;
+    padding: 5px 5px 5px 5px;
+    color: #e4e4f0;
+    border-radius: 7px;
+}
+.full-info {
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+}
+
+.experience_info {
+    display: flex;
+    flex-basis: auto;
+    justify-content: space-between;
+}
+.education h3 {
+    background: #b3e1cc;
+    border-radius: 5px;
+}
+.education_data {
+    display: flex;
+    font-family: Roboto;
+    justify-content: space-between;
+}
+.education_university {
+    text-align: center;
+}
+.skills h3 {
+    background: #b3e1cc;
+    border-radius: 5px;
+}
+.skills_column {
+    display: flex;
+    justify-content: space-around;
+}
+@media screen and (max-width: 1000px)  {
+    .skills_column {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 15px 0px 15px;
+    }
+}
+
+
+.skills_column li {
+    width: 40%;
+}
+@media screen and (max-width: 735px)  {
+    .skills_column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .skills_column li {
+        width: 100%;
+    }
+}
+.skills_rating {
+    display: flex;
+    flex-direction: row;
+}
+.skills_item {
+    display: flex;
+    justify-content: space-between;
+}
+.fa {
+    color:#55517e;
+}
+li {
+    list-style-type: none;
+}
+.footer {
+    font-family: Roboto, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 0px 20px 0px;
+}
+@media screen and (max-width: 900px)  {
+    .content {
+        flex-direction: column;
+    }
+    .profile{
+        width: 100%;
+        text-align: center;
+    }
+    ul {
+        padding: 0;
+    }
+    .full-info {
+        background: url(wormz.png);
+    }
+    .education {
+        border: none;
+    }
+    .experience {
+        border: none;
+    }
+    .skills {
+        border: none;
+    }
+    .experience_data {
+        flex-wrap: wrap;
+    }
+    .experience_addition {
+        border-top: 1px solid #ddd;
+        width: 100%;
+    }
+    .education_data {
+        flex-direction: column;
+        flex-wrap:  wrap;
+    }
+    h3 {
+        text-align: center;
+    }
+    .education_date {
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+        padding: 5px 0px 5px 0px;
+    }
+    .education_cource {
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+        padding: 5px 0px 5px 0px;
+    }
+    .education_university {
+        text-align: center;
+        padding: 5px 0px 5px 0px;
+    }
+    #resume {
+        font-size: 21px;
+    }
+    #resume:after {
+        display: inline-block;
+        margin: 0 0 4px 0px;
+        height: 4px;
+        content: " ";
+        text-shadow: none;
+        background-color: #7b88a4;
+        width: 35%;
+    }
+    #resume:before {
+        display: inline-block;
+        margin: 0 0 4px 0;
+        height: 4px;
+        content: " ";
+        text-shadow: none;
+        background-color: #7b88a4;
+        width: 35%;
+    }
+}

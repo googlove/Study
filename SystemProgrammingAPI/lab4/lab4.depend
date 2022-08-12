@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1605552704 source:c:\users\user\source\lab4\main.cpp
+	<tchar.h>
+	<windows.h>
+	<stdio.h>
+

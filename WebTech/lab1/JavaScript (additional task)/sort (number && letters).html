@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border:1px solid silver;
+            margin:0 auto;
+        }
+        td {
+            border: 1px solid silver;
+        }
+        th {
+            cursor:pointer;
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <th>Голова таблицы</th>
+        <tr><td>a</td></tr>
+        <tr><td>b</td></tr>
+        <tr><td>t</td></tr>
+        <tr><td>m</td></tr>
+    </table>
+    <script>
+        
+        let td = document.querySelectorAll("table td");
+        let th = document.querySelector("table th");
+        let arr = [];
+        td.forEach((elem) => {
+             arr.push(elem.innerText);   
+        });
+       
+        arr.forEach(element => {
+            if(isNaN(Number(element))) {
+                arr.sort();
+            } 
+            else {
+                arr.sort(compareNumbers);
+            }           
+        });
+
+        function compareNumbers(a, b) {
+            if (a > b) return 1;
+            if (a == b) return 0;
+            if (a < b) return -1;
+        }
+              
+       
+        let n = 0;
+        th.addEventListener("click", () => {
+            n++;
+            if(n%2 != 0) {
+            for(let i = 0; i < td.length; i++) {
+            td[i].innerText = arr[i];
+            } }
+            else {
+            for(let i = 0; i < td.length; i++) {
+            td[i].innerText = arr[td.length-1-i];
+            } }
+            
+        });
+       
+        console.log(arr);
+   </script>
+</body>
+</html>
